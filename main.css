@@ -1,0 +1,104 @@
+body{
+  background-color: #1c2020b7;
+}
+.container {
+    margin: 100px;
+    margin-left: 100px;
+  }
+  .container h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .form {
+    background-color: rgb(8, 73, 117);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .tasks {
+    background-color: transparent;
+    padding: 20px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.856);
+    border-radius: 15px;
+    width: 900px;
+    margin: 30px auto;
+  }
+  .task {
+    background-color: rgb(6, 82, 126);
+    padding: 25px;
+    margin: 10px 0 0 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+  }
+  span {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .delete {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 12px;
+    transition: 0.3s;
+    color: red;
+  }
+  .delete:hover {
+    cursor: pointer;
+    background-color: #ff0000;
+    color: white;
+  }
+  .input {
+    padding: 8px 50px;
+    border: none;
+    
+    border-radius: 15px;
+    background-color: #ffffff5d;
+    color: white;
+    font-size: 18px;
+  }
+  .input:focus {
+    outline: none;
+    color: white;
+  }
+  .add {
+    padding: 8px 8px;
+    border: none;
+    
+    border-radius: 15px;    
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 11px;
+    background-color: #ffffff5d;
+    cursor: pointer;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      transition: 0.3s;
+     
+  }
+  .add:hover {
+    background-color: #043d6bce;
+     
+  }
+  .input::placeholder {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
