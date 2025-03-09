@@ -1,104 +1,148 @@
-body{
+* {
+  box-sizing: border-box;
+}
+body {
   background-color: #1c2020b7;
+  margin: 0;
+  padding: 0;
 }
 .container {
-    margin: 100px;
-    margin-left: 100px;
-  }
-  .container h1 {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 40px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-  .form {
-    background-color: rgb(8, 73, 117);
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px 0;
     margin: 0 auto;
   }
+}
+.container h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.form {
+  background-color: rgb(8, 68, 117);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.tasks {
+  background-color: transparent;
+  padding: 15px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.856);
+  border-radius: 15px;
+  width: 900px;
+  margin: 30px auto;
+}
+@media (max-width: 767px) {
   .tasks {
-    background-color: transparent;
-    padding: 20px 25px;
-    border: 1px solid rgba(255, 255, 255, 0.856);
-    border-radius: 15px;
-    width: 900px;
-    margin: 30px auto;
+    width: 350px;
   }
+}
+.task {
+  background-color: rgb(6, 82, 126);
+  padding: 20px;
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  position: relative;
+}
+@media (max-width: 767px) {
   .task {
-    background-color: rgb(6, 82, 126);
-    padding: 25px;
-    margin: 10px 0 0 10px;
-    border-radius: 10px;
-    font-weight: bold;
-    position: relative;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
   }
-  span {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-  .delete {
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgb(241, 241, 241);
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
+}
+span {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+@media (max-width: 767px) {
+  .task span {
+    display: inline-block;
+    max-width: 90%;
+    white-space: wrap;
     padding: 5px 10px;
-    font-size: 12px;
-    transition: 0.3s;
-    color: red;
+    word-wrap: break-word;
+    line-height: 1.8;
   }
-  .delete:hover {
-    cursor: pointer;
-    background-color: #ff0000;
-    color: white;
-  }
+}
+.delete {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  background-color: rgb(241, 241, 241);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  padding: 2px 2px;
+  font-size: 12px;
+  transition: 0.3s;
+  color: red;
+}
+.delete:hover {
+  cursor: pointer;
+  background-color: #ff0000;
+  color: white;
+}
+.input {
+  padding: 8px 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ffffff5d;
+  color: white;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
   .input {
-    padding: 8px 50px;
-    border: none;
-    
-    border-radius: 15px;
-    background-color: #ffffff5d;
-    color: white;
-    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
-  .input:focus {
-    outline: none;
-    color: white;
-  }
+}
+.input:focus {
+  outline: none;
+  color: white;
+}
+.add {
+  padding: 8px 8px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 11px;
+  background-color: #ffffff5d;
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
   .add {
-    padding: 8px 8px;
-    border: none;
-    
-    border-radius: 15px;    
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 11px;
-    background-color: #ffffff5d;
-    cursor: pointer;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      transition: 0.3s;
-     
+    margin: 10px auto;
   }
-  .add:hover {
-    background-color: #043d6bce;
-     
-  }
-  .input::placeholder {
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
+}
+.add:hover {
+  background-color: #043d6bce;
+}
+.input::placeholder {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
