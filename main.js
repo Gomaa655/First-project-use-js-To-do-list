@@ -21,6 +21,7 @@ function displayTasks() {
   updateLocalStorage();
 }
 
+
 function addTask() {
   let taskText = inputField.value.trim();
   if (taskText !== "") {

@@ -12,8 +12,7 @@ body {
 }
 @media (max-width: 767px) {
   .container {
-    padding: 0 10px 0;
-    margin: 0 auto;
+   margin: 5px auto;
   }
 }
 .container h1 {
@@ -25,14 +24,19 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .form {
-  background-color: rgb(8, 68, 117);
+  background-color:rgb(3, 99, 59);
   padding: 20px;
   text-align: center;
   border-radius: 10px;
   position: relative;
   margin: 0 auto;
+  width:700px;
 }
-
+@media(max-width:767px){
+  .form{
+    max-width: 100%;
+  }
+}
 .tasks {
   background-color: transparent;
   padding: 15px 20px;
@@ -43,28 +47,30 @@ body {
 }
 @media (max-width: 767px) {
   .tasks {
-    width: 350px;
+    max-width: 100%;
   }
 }
 .task {
-  background-color: rgb(6, 82, 126);
+  background-color: rgb(3, 99, 59);
   padding: 20px;
   margin: 10px 0 10px 0;
   border-radius: 10px;
   font-weight: bold;
   position: relative;
+  
 }
 @media (max-width: 767px) {
   .task {
-    width: 300px;
+ max-width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
+
 }
 span {
   color: white;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -87,10 +93,10 @@ span {
   transform: translateY(-50%);
   background-color: rgb(241, 241, 241);
   border: none;
-  border-radius: 4px;
+  border-radius: 3px;
   text-align: center;
   font-weight: bold;
-  padding: 2px 2px;
+  padding: 5px 5px;
   font-size: 12px;
   transition: 0.3s;
   color: red;
@@ -104,22 +110,27 @@ span {
   padding: 8px 50px;
   border: none;
   border-radius: 15px;
-  background-color: #ffffff5d;
+  background-color: #ffffff80;
   color: white;
   font-size: 18px;
 }
 @media (max-width: 767px) {
   .input {
-    margin-bottom: 10px;
-    margin-top: 10px;
+  margin: 10px auto;
+    width: 200px;
   }
 }
 .input:focus {
   outline: none;
   color: white;
 }
+.input:focus::-webkit-input-placeholder{
+  opacity: 0;
+  transition: 0.3s;
+}
 .add {
   padding: 8px 8px;
+  margin-left: 5px ;
   border: none;
   border-radius: 10px;
   color: #ffffff;
@@ -137,7 +148,9 @@ span {
   }
 }
 .add:hover {
-  background-color: #043d6bce;
+  background-color:  rgba(255, 255, 255, 0.712);
+  color:rgb(3, 99, 59);
+  
 }
 .input::placeholder {
   color: white;
